@@ -1,0 +1,40 @@
+// 2. ATM Withdrawal
+
+// Create a method withdraw(int balance, int amount):
+
+// If amount is greater than balance, throw an exception.
+// Otherwise, deduct the amount and print the remaining balance
+
+
+import java.util.*;
+class ATMwithDrawEx{
+    public static void withdraw(int balance, int amount)throws Exception
+    {
+        if(amount>balance)
+        {
+            throw new Exception("your balance is low and amount is large");
+        }
+        else
+        {
+            balance=balance-amount;
+            System.out.println("your remaining balance is:"+balance);
+        }
+    }
+    public static void main(String[]args)
+    {
+        try{
+            withdraw(5000,5000);
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
+    }
+    
+}
+
+/*
+op:
+your remaining balance is:0
+
+*/
