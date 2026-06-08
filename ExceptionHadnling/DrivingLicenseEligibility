@@ -1,0 +1,38 @@
+/*
+1. Driving License Eligibility
+
+Create a method checkLicense(int age):
+
+If age is less than 18, throw an exception with a suitable message.
+Otherwise, print "Eligible for Driving License".
+
+*/
+import java.util.*;
+class DrivingLicenseEligibilityEx{
+    public static void checkLicense(int age)throws Exception{
+        if(age<18)
+        {
+    throw new Exception("your age must be greater than 18  for Driving License");
+        }
+        else
+        {
+            System.out.println("Eligible for Driving License");
+        }
+    }
+    public static void main(String[]args)
+    {
+        try
+        {
+           checkLicense(14);
+        }
+        catch (Exception e)
+        {
+            System.out.print(e);
+        }
+    }
+}
+
+/*
+op:java.lang.Exception: your age must be greater than 18  for Driving License
+
+*/
