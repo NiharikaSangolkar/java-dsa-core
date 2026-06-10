@@ -1,0 +1,35 @@
+// Product Stock Check
+// Create a method purchase(int stock, int quantity):
+// If quantity is greater than stock, throw an exception.
+// Otherwise, print "Purchase Successful".
+import java.util.*;
+class ProductStockCheck{
+    public static void  purchase(int stock, int quantity)throws Exception{
+        if(quantity>stock)
+        {
+            throw new Exception("Insufficient stock. Only " + stock + " item(s) available.");
+        }
+        else
+        {
+            System.out.println("Purchase Successful");
+        }
+    }
+    public static void main(String[]args)
+    {
+        try{
+            purchase(5,7);
+        }
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }
+    }
+}
+
+/*
+op:
+java.lang.Exception: Insufficient stock. Only 5 item(s) available
+
+
+*/
+
