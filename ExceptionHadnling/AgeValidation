@@ -1,0 +1,29 @@
+// 13. Age Validation
+
+// Create a method validateAge(int age):
+
+// If age is negative, throw an exception.
+// Otherwise, print "Valid Age".
+import java.util.*;
+class AgeValidation{
+    public static void validateAge(int age)throws Exception{
+        if(age<0)
+        {
+            throw new Exception("Age not be Negative");
+        }
+        else
+        {
+            System.out.print("valid Age");
+        }
+    }
+    public static void main(String[]args)
+    {
+        try{
+            validateAge(-5);
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
+    }
+}
