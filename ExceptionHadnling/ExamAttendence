@@ -1,0 +1,37 @@
+//  Exam Attendance
+
+// Create a method checkAttendance(int percentage):
+
+// If attendance is less than 75%, throw an exception.
+// Otherwise, print "Allowed to Appear in Exam".
+import java.util.*;
+class ExamAttendence{
+    public static void checkAttendance(int percentage) throws Exception {
+        if(percentage<75)
+        {
+            throw new Exception("Your Attendence is below 75%,Not Allowed in Exam");
+        }
+        else
+        {
+            System.out.println("Allowed to Appear in Exam");
+        }
+    }
+    public static void main(String[]args)
+    {
+        try{
+            checkAttendance(55);
+            
+        }
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }
+    }
+}
+
+/*
+op:
+java.lang.Exception: Your Attendence is below 75%,Not Allowed to Appear in Exam
+
+
+*/
