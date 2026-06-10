@@ -1,0 +1,34 @@
+// 14. Username Validation
+
+// Create a method validateUsername(String username):
+
+// If username is empty, throw an exception.
+// Otherwise, print "Username Valid".
+import java.util.*;
+class UsernameValidation{
+    public static void validateUsername(String username)throws Exception{
+        if(username==null || username.isEmpty())
+        {
+            throw new Exception("Username cannot be null or empty");
+        }
+        else
+        {
+            System.out.print("Username Valid");
+        }
+    }
+    public static void main(String[]args)
+    {
+        try{
+            validateUsername("");
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
+    }
+}
+
+/*
+op:
+java.lang.Exception: Username cannot be null or empty
+*/
