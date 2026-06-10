@@ -1,0 +1,23 @@
+//Create an Employee class with fields empId, empName, and salary. Accept values from the user and display them.
+import java.util.*;
+class Employee{
+    int empId;
+    String empName;
+    Double empSalary;
+    public static void main(String[]args)
+    {
+    Scanner sc=new Scanner(System.in);
+    Employee e=new Employee();
+    System.out.println("enter employee id:");
+     e.empId=sc.nextInt();
+     System.out.println("enter employee name:");
+    e.empName=sc.next();
+     System.out.println("enter employee salary:");
+    e.empSalary=sc.nextDouble();
+    System.out.println("employee id:"+e.empId);
+    System.out.println("employee name:"+e.empName);
+    System.out.println("employeeid:"+e.empSalary);
+    
+    
+}
+}
