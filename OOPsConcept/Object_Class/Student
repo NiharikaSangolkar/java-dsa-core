@@ -1,0 +1,55 @@
+// Create a Student class with fields id, name, and marks. Create 5 objects and display their details.
+import java.util.*;
+class Student {
+    int id, marks;
+    String name;
+
+    void display() {
+        System.out.println("Student ID: " + id);
+        System.out.println("Student Marks: " + marks);
+        System.out.println("Student Name: " + name);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        Student s2 = new Student();
+        Student s3 = new Student();
+        Student s4 = new Student();
+        Student s5 = new Student();
+
+        s1.id = 10;
+        s1.marks = 67;
+        s1.name = "Ramesh";
+
+        s2.id = 12;
+        s2.marks = 87;
+        s2.name = "Arjun";
+
+        s3.id = 13;
+        s3.marks = 77;
+        s3.name = "Anjali";
+
+        s4.id = 16;
+        s4.marks = 87;
+        s4.name = "Arjunkumar";
+
+        s5.id = 32;
+        s5.marks = 67;
+        s5.name = "Suraj";
+
+        System.out.println("Object 1");
+        s1.display();
+
+        System.out.println("Object 2");
+        s2.display();
+
+        System.out.println("Object 3");
+        s3.display();
+
+        System.out.println("Object 4");
+        s4.display();
+
+        System.out.println("Object 5");
+        s5.display();
+    }
+}
