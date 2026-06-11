@@ -1,0 +1,18 @@
+/*A default constructor has no parameters. It’s used to assign default values to an object. If no constructor is explicitly defined, Java provides a default constructor.*/
+
+import java.util.*;
+class DefaultConstructorex{
+    DefaultConstructorex()
+    {
+        System.out.println("I am Default constructor");
+    }
+    public static void main(String[]args)
+    {
+        DefaultConstructorex DfC=new DefaultConstructorex();
+        
+    }
+}
+/*
+op:
+I am Default constructor
+*/
