@@ -1,0 +1,23 @@
+/*
+Create a Car class with parameterized constructor.
+*/
+import java.util.*;
+class Car{
+    int carno;
+    String carname;
+    Car(int carno,String carname)
+    {
+        this.carno=carno;
+        this.carname=carname;
+    }
+    public void display()
+    {
+        System.out.println("carno:"+carno);
+        System.out.println("carname:"+carname);
+    }
+    public static void main(String[]args)
+    {
+        Car c=new Car(121,"BMW");
+        c.display();
+    }
+}
