@@ -1,0 +1,29 @@
+/*
+A constructor that has parameters is known as parameterized constructor. If we want to initialize fields of the class with our own values, then use a parameterized constructor.
+*/
+//parameterized constructor
+import java.util.*;
+class parameterizedconex{
+    int id;
+    String name;
+    parameterizedconex(int id,String name)
+    {
+        this.id=id;
+        this.name=name;
+    }
+    public void display()
+    {
+        System.out.println("id:"+id);
+        System.out.println("name:"+name);
+    }
+    public static void main(String[]args)
+    {
+        parameterizedconex pmc=new parameterizedconex(1,"riya");
+        pmc.display();
+    }
+}
+
+/*
+id:1
+name:riya
+*/
