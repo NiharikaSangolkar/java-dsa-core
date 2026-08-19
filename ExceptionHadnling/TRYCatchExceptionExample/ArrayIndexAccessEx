@@ -1,0 +1,32 @@
+// Write a program with:
+// int arr[] = {10, 20, 30, 40, 50};
+// Try to access:
+// arr[10]
+// Your program should:
+// Use try-catch.
+// Catch the specific exception.
+// Print:
+// Invalid array index
+// After handling the exception, print:
+// Program continues...
+ class TryCatchExceptionExample{
+    public static void main(String[]args)
+    {
+        try{
+            int arr[] = {10, 20, 30, 40, 50};
+            
+                System.out.println("index:"+arr[10]);
+           
+            
+          
+        }
+        // ArrayIndexOutOfBoundsException e
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Invalid array index");
+
+        }
+       
+  System.out.println("Program continues...");
+        
+    }
+ }
