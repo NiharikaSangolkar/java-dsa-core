@@ -1,0 +1,30 @@
+// Write a program that:
+
+// String value = "abc";
+// int number = Integer.parseInt(value);
+
+// Requirements:
+
+// Use try-catch.
+// Find the specific exception yourself.
+// Print:
+// Invalid number format
+// After handling it, print:
+// Program continues...
+
+class StringExceptionExample{
+    public static void main(String[]args)
+    {
+        try{
+            
+String value = "abc";
+int number = Integer.parseInt(value);
+System.out.println("number:"+number);
+        }
+        catch(NumberFormatException e){
+            System.out.println("Invalid number format");
+
+        }
+        System.out.println("Program continues...");
+    }
+}
